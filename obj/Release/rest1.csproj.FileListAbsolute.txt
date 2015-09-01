@@ -1,0 +1,6 @@
+C:\Users\enzo\documents\visual studio 2013\Projects\Restful examples\rest1\bin\rest1.dll.config
+C:\Users\enzo\documents\visual studio 2013\Projects\Restful examples\rest1\bin\rest1.dll
+C:\Users\enzo\documents\visual studio 2013\Projects\Restful examples\rest1\bin\rest1.pdb
+C:\Users\enzo\documents\visual studio 2013\Projects\Restful examples\rest1\obj\Release\rest1.csprojResolveAssemblyReference.cache
+C:\Users\enzo\documents\visual studio 2013\Projects\Restful examples\rest1\obj\Release\rest1.dll
+C:\Users\enzo\documents\visual studio 2013\Projects\Restful examples\rest1\obj\Release\rest1.pdb

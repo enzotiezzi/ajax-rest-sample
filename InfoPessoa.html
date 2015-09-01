@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>     
+<body>
+    <script>
+        document.body.onload = onLoad;
+
+        function onLoad()
+        {   
+            var request = new XMLHttpRequest();
+            var url = "Services/GHPessoa.ashx";
+
+            request.onreadystatechange = function ()
+            {
+                if (request.status == 200 && request.readyState == 4)
+                {
+                    var pessoa = JSON.parse(request.responseText);
+
+                    var pNome = document.createElement("p");
+                    var pSobreNome = document.createElement("p");
+                    var pIdade = document.createElement("p");
+
+                    var txtNodeNome = document.createTextNode(pessoa.Nome);
+                    var txtNodeSobreNome = document.createTextNode(pessoa.SobreNome);
+                    var txtNodeIdade = document.createTextNode(pessoa.Idade);
+
+                    pNome.appendChild(txtNodeNome);
+                    pSobreNome.appendChild(txtNodeSobreNome);
+                    pIdade.appendChild(txtNodeIdade);
+
+                    document.body.appendChild(pNome);
+                    document.body.appendChild(pSobreNome);
+                    document.body.appendChild(pIdade);
+                }
+            }
+
+            request.open("get", url, true);
+            request.setRequestHeader("Accept", "application/json");
+            request.send();
+        }
+    </script>
+
+</body>
+</html>
